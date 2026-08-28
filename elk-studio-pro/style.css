@@ -5,6 +5,7 @@
   --dark-2: #111827;
   --card-bg: rgba(20, 20, 20, 0.85);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,196 +20,20 @@ body {
   padding-top: 80px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background: 
-    linear-gradient(rgba(11,15,26,0.85), rgba(17,24,39,0.9)),
+  background:
+    linear-gradient(rgba(11,15,26,0.92), rgba(17,24,39,0.95)),
     url("img/background-video.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* HEADER */
-.header {
-  text-align: center;
-  padding: 20px;
-}
+/* ================= NAVBAR ================= */
 
-.logo {
-  width: 160px;
-}
-
-/* SECTIONS */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-
-.hero h1 {
-  font-size: 42px;
-  font-weight: 800;
-  max-width: 800px;
-  margin: 10px auto 20px auto;
-  line-height: 1.2;
-}
-
-.hero p {
-  margin-top: 20px;
-  color: #cbd5e1;
-  font-size: 18px;
-}
-
-.hero-logo {
-  width: 20%;
-  max-width: 1000px;
-  height: auto;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 35px;
-  padding: 15px 35px;
-  background: var(--gold);
-  color: black;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: 0.4s;
-}
-
-.btn:hover {
-  background: var(--gold-light);
-  transform: scale(1.05);
-}
-.btn:hover {
-  background: #d4af37;
-}
-
-/* GRID */
-.grid {
-  margin-top: 60px;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* CARD + PRICE */
-.card,
-.price {
-  background: var(--card-bg);
-  backdrop-filter: blur(15px);
-  padding: 35px;
-  border-radius: 20px;
-  transition: all 0.4s ease;
-  text-decoration: none;
-  color: white;
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-}
-
-.card:hover,
-.price:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(212, 175, 55, 0.3);
-}
-.card:hover,
-.price:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
-}
-
-.price span {
-  display: block;
-  margin-top: 12px;
-  font-size: 14px;
-  color: #9ca3af;
-}
-
-/* CONTACT */
-.contact form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.contact input,
-.contact textarea {
-  padding: 14px;
-  border-radius: 8px;
-  border: none;
-}
-
-.contact button {
-  padding: 15px;
-  border-radius: 8px;
-  border: none;
-  background: #d4af37;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact button:hover {
-  background: #d4af37;
-}
-
-.urgent {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #f87171;
-  font-weight: bold;
-}
-
-/* LEAD SECTION */
-.lead {
-  background: linear-gradient(1deg, #d4af3735, #dfc64740);
-  padding: 70px 20px;
-  border-radius: 20px;
-  margin: 10px 10px;
-}
-
-.lead h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.lead p {
-  margin-bottom: 25px;
-  font-size: 16px;
-}
-
-/* FOOTER */
-footer {
-  padding: 40px;
-  text-align: center;
-  background: #05070d;
-  color: #9ca3af;
-}
-
-/* ANIMAZIONI PREMIUM */
-.hidden {
-  opacity: 0;
-  transform: translateY(60px) scale(0.95);
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* NAVBAR */
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(15px);
-  padding: 22px 60px;
+  padding: 18px 40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -223,7 +48,7 @@ footer {
 }
 
 .brand {
-  color: #d4af37;
+  color: var(--gold);
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -233,7 +58,7 @@ footer {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 35px;
+  gap: 30px;
 }
 
 .nav-menu a {
@@ -241,30 +66,16 @@ footer {
   color: #ccc;
   font-weight: 500;
   transition: 0.3s;
+  font-size: 15px;
 }
 
-.nav-menu a:hover {
-  color: #d4af37;
-}
-
+.nav-menu a:hover,
 .nav-menu .active {
-  color: #d4af37;
-}
-@keyframes subtleZoom {
-  0% { background-size: 100%; }
-  100% { background-size: 110%; }
+  color: var(--gold);
 }
 
-body {
-  animation: subtleZoom 20s ease-in-out infinite alternate;
-}
-#video {
-  background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-    url("img/editing-room.jpg");
-  background-size: cover;
-  background-position: center;
-}
+/* ================= HERO ================= */
+
 .hero {
   position: relative;
   min-height: 90vh;
@@ -273,7 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  padding: 0 20px;
   background: url("hero.jpg") center/cover no-repeat;
 }
 
@@ -283,29 +94,313 @@ body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0,0,0,0.8),
-    rgba(0,0,0,0.6)
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.65)
   );
 }
 
 .hero h1,
 .hero p,
-.hero .btn {
+.hero .btn,
+.hero-logo-container {
   position: relative;
   z-index: 2;
 }
-.services {
-  padding: 80px 20px;
 
-  background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-    url("img/editing-room.jpg");
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  max-width: 800px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
 
-  background-size: cover;
-  background-position: center;
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 700px;
+}
+
+.hero-logo {
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 40px;
+  background: var(--gold);
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+}
+
+.btn:hover {
+  background: var(--gold-light);
+  transform: scale(1.05);
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+  padding: 90px 20px;
+  text-align: center;
 }
 
 h1 span,
 h2 span {
   color: var(--gold);
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= CARD ================= */
+
+.card,
+.price {
+  background: var(--card-bg);
+  backdrop-filter: blur(18px);
+  padding: 35px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover,
+.price:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(212, 175, 55, 0.3);
+}
+
+.price span {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* ================= CONTACT ================= */
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+.contact button {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background: var(--gold);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: var(--gold-light);
+}
+
+.urgent {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #f87171;
+  font-weight: bold;
+}
+
+/* ================= LEAD ================= */
+
+.lead {
+  background: linear-gradient(1deg, #d4af3735, #dfc64740);
+  padding: 70px 20px;
+  border-radius: 20px;
+  margin: 40px 10px;
+}
+
+.lead h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.lead p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #05070d;
+  color: #9ca3af;
+}
+
+/* ================= UTILITIES & ANIMATIONS ================= */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.fixed-cta {
+  display: none;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #000;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-logo {
+    width: 140px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .price {
+    padding: 25px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fixed-cta {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 999;
+  }
+}
+/* ================= SFONDI PERSONALIZZATI ================= */
+
+.bg-sfondo1 {
+  background: 
+    linear-gradient(rgba(11,15,26,0.92), rgba(17,24,39,0.95)), 
+    url("sfondo1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-sfondo2 {
+  background: 
+    linear-gradient(rgba(11,15,26,0.92), rgba(17,24,39,0.95)), 
+    url("sfondo2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-sfondo3 {
+  background: 
+    linear-gradient(rgba(11,15,26,0.92), rgba(17,24,39,0.95)), 
+    url("sfondo3.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-sfondo4 {
+  background: 
+    linear-gradient(rgba(11,15,26,0.92), rgba(17,24,39,0.95)), 
+    url("sfondo4.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }

@@ -7,16 +7,20 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-sfondo4">
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
     <div class="nav-left">
-      <a href="#home" class="brand">ELK-STUDIO</a>
+      <a href="#home" class="brand">Elk-Studio</a>
     </div>
 
-    <ul class="nav-menu">
+    <!-- Aggiunto l'id e l'icona per l'hamburger menu -->
+    <div id="hamburger" class="hamburger">☰</div>
+
+    <!-- Aggiunto l'id per il menu -->
+    <ul id="navMenu" class="nav-menu">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#servizi">Servizi</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -114,7 +118,8 @@
 <!-- CONTATTI -->
 <section id="contact" class="contact">
     <h2>Ti chiamiamo noi</h2>
-    <form action="https://formsubmit.co/elkhoudmi_media@hotmail.com" method="POST">
+    <!-- Corretto il link della mail e aggiunto enctype -->
+    <form action="mailto:elkhoudmi_media@hotmail.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="text" name="phone" placeholder="Telefono" required>
