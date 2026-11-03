@@ -376,7 +376,7 @@ footer {
     url("sfondo1.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bg-sfondo2 {
@@ -385,7 +385,7 @@ footer {
     url("sfondo2.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bg-sfondo3 {
@@ -394,7 +394,7 @@ footer {
     url("sfondo3.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bg-sfondo4 {
@@ -403,5 +403,5 @@ footer {
     url("sfondo4.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
