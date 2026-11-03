@@ -23,11 +23,9 @@ body {
   background:
     linear-gradient(rgba(11,15,26,0.65), rgba(17,24,39,0.70)),
     url("img/background-video.jpg");
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: scroll !important;
-  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ================= NAVBAR ================= */
@@ -296,6 +294,11 @@ footer {
 /* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
   .navbar {
     padding: 15px 20px;
   }
@@ -365,36 +368,40 @@ footer {
   }
 }
 
-/* ================= SFONDI PERSONALIZZATI DEFINITIVI ================= */
-
-.bg-sfondo1, .bg-sfondo2, .bg-sfondo3, .bg-sfondo4 {
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: scroll !important;
-  min-height: 100vh;
-}
+/* ================= SFONDI PERSONALIZZATI ================= */
 
 .bg-sfondo1 {
   background: 
     linear-gradient(rgba(11,15,26,0.65), rgba(17,24,39,0.70)), 
     url("sfondo1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-sfondo2 {
   background: 
     linear-gradient(rgba(11,15,26,0.65), rgba(17,24,39,0.70)), 
     url("sfondo2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-sfondo3 {
   background: 
     linear-gradient(rgba(11,15,26,0.65), rgba(17,24,39,0.70)), 
     url("sfondo3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-sfondo4 {
   background: 
     linear-gradient(rgba(11,15,26,0.65), rgba(17,24,39,0.70)), 
     url("sfondo4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
